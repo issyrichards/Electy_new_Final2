@@ -5,18 +5,19 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
 		</script>
 		<script src="{{ url_for('static', filename='dist/js/bootstrap.js') }}"></script>
+    <link rel='stylesheet' href="{{ url_for('static', filename='nprogress.css') }}"/>
+    <script src="{{ url_for('static', filename='progress.js') }}"></script>
 
     <link href="{{ url_for('static', filename='main.css') }}" rel="stylesheet" type="text/css"/>
 		<link href="{{ url_for('static', filename='dist/css/bootstrap.css') }}" rel="stylesheet"/>
         <link rel="shortcut icon" type="image/png" href="http://i.imgur.com/txhtRuV.png" title="source: imgur.com" /></a>
     <title>Electy</title>
 
-
 	</head>
 	
 	<body>
 
-<div id="loading">
+<!--<div id="loading">
 <nav id="wholebar2" class= "nav navbar navbar-default navbar-fixed-top navbar-absolute">
       <div class="container">
 
@@ -37,7 +38,7 @@
 </div>
 </div>
 
-</div>
+</div>-->
 
 <div id="content">
 		<nav id="wholebar" class= "nav navbar navbar-default navbar-fixed-top navbar-absolute">
@@ -107,6 +108,10 @@
 </script>
 
 <script>
+$(".openers").on('click',   function() { NProgress.start(); });
+</script>
+
+<!--<script>
 $(document).ready(function(){       
    var scroll_start = 0;
    var startchange = $('#wholebar');
@@ -120,7 +125,7 @@ $(document).ready(function(){
        }
    });
 });
-</script>
+</script>-->
 
 </div>
 	</body>
