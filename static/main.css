@@ -1,5 +1,5 @@
 #streamingsection {
-	padding-top: 30px;
+	padding-top: 60px;
 }
 
 div#loading {
@@ -118,7 +118,7 @@ h1 #issueheader{
 	/*max-width: 220px;
 	/*height: auto;
 	margin:0;*/
-	width: 100%;
+	width: 70%;
 	max-width: 300px;
 	margin: 5px 0;
 }
