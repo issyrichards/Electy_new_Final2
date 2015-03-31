@@ -88,7 +88,6 @@ def get_homepage():
 
 @app.route("/<issue>")
 def get_tweet_info(issue):
-	render_template('loading.html')
 	labour_proportion = get_labour_proportion(issue)
 	conservative_proportion = get_conservative_proportion(issue)
 	libdem_proportion = get_libdem_proportion(issue)

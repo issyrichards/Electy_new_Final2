@@ -10,9 +10,14 @@
 		<link href="{{ url_for('static', filename='dist/css/bootstrap.css') }}" rel="stylesheet"/>
         <link rel="shortcut icon" type="image/png" href="http://i.imgur.com/txhtRuV.png" title="source: imgur.com" /></a>
     <title>Electy</title>
+
+
 	</head>
 	
 	<body>
+
+<div id="loading"></div>
+<div id="content">
 		<nav id="wholebar" class= "nav navbar navbar-default navbar-fixed-top navbar-absolute">
 			<div class="container">
 
@@ -60,6 +65,13 @@
   </div>
 </div>
 
+<script>
+ $("#loading").hide();
+ $("#openers").on("click", function() {
+  $("#loading").toggle("fast");
+  $("#content").toggle("fast");
+ });
+</script>
 
 <script>
  $("#issuesection").hide();
@@ -88,5 +100,6 @@ $(document).ready(function(){
 });
 </script>
 
+</div>
 	</body>
 </html>
