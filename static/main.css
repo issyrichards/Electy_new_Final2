@@ -1,3 +1,7 @@
+#streamingsection {
+	padding-top: 30px;
+}
+
 div#loading {
     cursor: wait;
     }
@@ -94,7 +98,7 @@ video
         margin-right: auto;
         margin-left: auto;
         margin-top: 68px;
-        margin-bottom: 120px;
+        margin-bottom: 110px;
       }
 
 .overlay {

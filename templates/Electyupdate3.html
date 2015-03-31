@@ -17,7 +17,7 @@
 	<body>
 
 <div id="loading">
-<nav id="wholebar" class= "nav navbar navbar-default navbar-fixed-top navbar-absolute">
+<nav id="wholebar2" class= "nav navbar navbar-default navbar-fixed-top navbar-absolute">
       <div class="container">
 
         <a href="Electyupdate3.html" class="navbar-header"><img id="logo" class="img-responsive" src="{{ url_for('static', filename='Logo_electy.png') }}"/></a>
@@ -36,22 +36,6 @@
     <div class="col-xs-5"></div>
 </div>
 </div>
-
-<script>
-$(document).ready(function(){       
-   var scroll_start = 0;
-   var startchange = $('#wholebar');
-   var offset = startchange.offset();
-   $(document).scroll(function() { 
-      scroll_start = $(this).scrollTop();
-      if(scroll_start > offset.top) {
-          $('#wholebar').css('background-color', 'rgba(66,139,202,1)');
-       } else {
-          $('#wholebar').css('background-color', 'transparent');
-       }
-   });
-});
-</script>
 
 </div>
 
