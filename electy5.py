@@ -103,7 +103,7 @@ def sign_up():
 	form_data = request.form
 	email = form_data['email']
 
-	mandrill_client.messages.send(message={'subject':'Your Electy results', 'from_email':'results@electy.com', 'to':[{'email':email}], 'html':"<p>Hi there,</p><p>Thanks for using Electy to help you vote.</p><p>You can keep up-to-date with political conversation about the issue you selected - {0} - <a href=\"http://localhost:5000/{0}\">here</a>.</p><p>Happy voting,</p><p>The Electy Team</p>".format(issue_name[-1])})
+	mandrill_client.messages.send(message={'subject':'Your Electy results', 'from_email':'results@electy.com', 'to':[{'email':email}], 'html':"<p>Hi there,</p><p>Thanks for using Electy to help you vote.</p><p>You can keep up-to-date with political conversation about the issue you selected - {0} - <a href=\"https://mysterious-journey-9885.herokuapp.com/{0}\">here</a>.</p><p>Happy voting,</p><p>The Electy Team</p>".format(issue_name[-1])})
 
 	return render_template('Electyupdate3.html')
 
