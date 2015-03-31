@@ -94,7 +94,7 @@ video
         margin-right: auto;
         margin-left: auto;
         margin-top: 68px;
-        margin-bottom: 150px;
+        margin-bottom: 120px;
       }
 
 .overlay {
@@ -124,8 +124,8 @@ h1 #issueheader{
 	/*max-width: 220px;
 	/*height: auto;
 	margin:0;*/
-	width: 70%;
-	max-width: 300px;
+	width: 100%;
+	max-width: 500px;
 	margin: 5px 0;
 }
 
@@ -136,6 +136,12 @@ h1 #issueheader{
 	border-bottom-width: 1px;
 }
 
+#wholebar2{
+  background-color: rgba(66,139,202,1);
+	border-bottom-style: solid;
+	border-bottom-color: transparent;
+	border-bottom-width: 1px;
+}
 .nav {
 transition-duration: 0.5s;
 }
@@ -264,9 +270,8 @@ iframe {
 form {
 	margin-top: -71px;
 	margin-right: 20px;
-	color: black;
 }
 
 div#page_header.nav.navbar-nav.navbar-right {
-	background-color: transparent;
+	background-color: rgba(66,139,202,1);
 }
