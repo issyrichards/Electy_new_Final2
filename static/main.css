@@ -9,7 +9,6 @@ div#loading {
     z-index: 1000;
     width: 160px;
     height: 24px;
-    background: url(4.gif) no-repeat;
     cursor: wait;
     }
 
