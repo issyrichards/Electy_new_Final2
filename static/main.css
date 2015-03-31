@@ -1,7 +1,5 @@
 div#loading {
     z-index: 1000;
-    width: 700px;
-    height: 1200px;
     cursor: wait;
     }
 
