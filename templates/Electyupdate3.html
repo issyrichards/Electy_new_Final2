@@ -6,7 +6,7 @@
 		</script>
 		<script src="{{ url_for('static', filename='dist/js/bootstrap.js') }}"></script>
     <link rel='stylesheet' href="{{ url_for('static', filename='nprogress.css') }}"/>
-    <script src="{{ url_for('static', filename='progress.js') }}"></script>
+    <script src="{{ url_for('static', filename='nprogress.js') }}"></script>
 
     <link href="{{ url_for('static', filename='main.css') }}" rel="stylesheet" type="text/css"/>
 		<link href="{{ url_for('static', filename='dist/css/bootstrap.css') }}" rel="stylesheet"/>
@@ -88,13 +88,13 @@
   </div>
 </div>
 
-<script>
+<!--<script>
  $("#loading").hide();
  $(".openers").on("click", function() {
   $("#loading").toggle("fast");
   $("#content").toggle("fast");
  });
-</script>
+</script>-->
 
 <script>
  $("#issuesection").hide();
@@ -111,7 +111,7 @@
 $(".openers").on('click',   function() { NProgress.start(); });
 </script>
 
-<!--<script>
+<script>
 $(document).ready(function(){       
    var scroll_start = 0;
    var startchange = $('#wholebar');
@@ -125,7 +125,7 @@ $(document).ready(function(){
        }
    });
 });
-</script>-->
+</script>
 
 </div>
 	</body>
