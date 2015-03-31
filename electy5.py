@@ -63,22 +63,22 @@ def get_total_tweets(issue):
 def get_labour_proportion(issue):
 	labour_proportion = float(get_labour_tweets(issue))/float(get_total_tweets(issue))*100
 	print 'Labour proportion:',labour_proportion
-	return labour_proportion
+	return "{0:.2f}".format(labour_proportion)
 
 def get_conservative_proportion(issue):
 	conservative_proportion = float(get_conservative_tweets(issue))/float(get_total_tweets(issue))*100
 	print 'Conservative proportion:', conservative_proportion
-	return conservative_proportion
+	return "{0:.2f}".format(conservative_proportion)
 
 def get_libdem_proportion(issue):
 	libdem_proportion = float(get_libdem_tweets(issue))/float(get_total_tweets(issue))*100
 	print 'Lib Dem proportion:', libdem_proportion
-	return libdem_proportion
+	return "{0:.2f}".format(libdem_proportion)
 
 def get_UKIP_proportion(issue):
 	UKIP_proportion = float(get_UKIP_tweets(issue))/float(get_total_tweets(issue))*100
 	print 'UKIP proportion:', UKIP_proportion
-	return UKIP_proportion
+	return "{0:.2f}".format(UKIP_proportion)
 
 issue_name = []
 
