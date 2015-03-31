@@ -114,6 +114,16 @@ h1 #issueheader{
 	/*max-width: 220px;
 	/*height: auto;
 	margin:0;*/
+	width: 100%;
+	max-width: 300px;
+	margin: 5px 0;
+}
+
+#logo2 {
+	/*height:52px;*/
+	/*max-width: 220px;
+	/*height: auto;
+	margin:0;*/
 	width: 70%;
 	max-width: 300px;
 	margin: 5px 0;

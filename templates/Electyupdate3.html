@@ -21,13 +21,8 @@
       <div class="container">
 
         <a href="Electyupdate3.html" class="navbar-header"><img id="logo" class="img-responsive" src="{{ url_for('static', filename='Logo_electy.png') }}"/></a>
-        <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
         <div class="collapse navbar-collapse navHeaderCollapse">
-        <ul class="nav navbar-nav navbar-right">
+        <ul class="nav navbar-nav navbar-right"></ul>
         </div>
       </div>
     </nav>
@@ -41,6 +36,23 @@
     <div class="col-xs-5"></div>
 </div>
 </div>
+
+<script>
+$(document).ready(function(){       
+   var scroll_start = 0;
+   var startchange = $('#wholebar');
+   var offset = startchange.offset();
+   $(document).scroll(function() { 
+      scroll_start = $(this).scrollTop();
+      if(scroll_start > offset.top) {
+          $('#wholebar').css('background-color', 'rgba(66,139,202,1)');
+       } else {
+          $('#wholebar').css('background-color', 'transparent');
+       }
+   });
+});
+</script>
+
 </div>
 
 <div id="content">
