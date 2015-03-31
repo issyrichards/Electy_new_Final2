@@ -1,1 +1,1 @@
-web: gunicorn electy5.py:app --log-file -
+web: gunicorn electy5:app --log-file -
