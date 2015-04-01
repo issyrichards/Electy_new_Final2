@@ -5,7 +5,7 @@ import mandrill
 from flask import Flask
 from flask import render_template
 from flask import request
-from datetime import datetime
+from datetime import timedelta, datetime
 
 mandrill_client = mandrill.Mandrill('snbNSMMfFG3IE_VzsGGgqg')
 
@@ -14,41 +14,31 @@ auth.set_access_token("1725724472-oy2grBIetHm8AtTPjpKeu21gjk72zcheNubpgLc", "YIN
 
 api = tweepy.API(auth)
 
-def get_year():
+def get_date():
 	now = datetime.now()
-	year = now.year
-	return year
-
-def get_month():
-	now = datetime.now()
-	month = now.month
-	return month
-
-def get_day():
-	now = datetime.now()
-	day = now.day - 7
-	return day
+	week_ago = now - timedelta(days=7)
+	return str(week_ago)[0:10]
 
 app = Flask(__name__)
 
 
 def get_labour_tweets(issue):
-	tweets = api.search(q=['{0}'.format(issue.replace('_',' ')), 'since:{0}-{1}-{2}'.format(get_year(), get_month(), get_day()), 'from:UKLabour'], count=100)
+	tweets = api.search(q=['{0}'.format(issue.replace('_',' ')), 'since:{0}'.format(get_date()), 'from:UKLabour'], count=100)
 	print 'Labour tweets:', tweets
 	return len(tweets)
 
 def get_conservative_tweets(issue):
-	tweets = api.search(q=['{0}'.format(issue.replace('_',' ')), 'since:{0}-{1}-{2}'.format(get_year(), get_month(), get_day()), 'from:Conservatives'], count=100)
+	tweets = api.search(q=['{0}'.format(issue.replace('_',' ')), 'since:{0}'.format(get_date()), 'from:Conservatives'], count=100)
 	print 'Conservative tweets:', tweets
 	return len(tweets)
 
 def get_libdem_tweets(issue):
-	tweets = api.search(q=['{0}'.format(issue.replace('_',' ')), 'since:{0}-{1}-{2}'.format(get_year(), get_month(), get_day()), 'from:LibDems'], count=100)
+	tweets = api.search(q=['{0}'.format(issue.replace('_',' ')), 'since:{0}'.format(get_date()), 'from:LibDems'], count=100)
 	print 'LibDem tweets:', tweets
 	return len(tweets)
 
 def get_UKIP_tweets(issue):
-	tweets = api.search(q=['{0}'.format(issue.replace('_',' ')), 'since:{0}-{1}-{2}'.format(get_year(), get_month(), get_day()), 'from:UKIP'], count=100)
+	tweets = api.search(q=['{0}'.format(issue.replace('_',' ')), 'since:{0}'.format(get_date()), 'from:UKIP'], count=100)
 	print 'UKIP tweets:', tweets
 	return len(tweets)
 
@@ -103,7 +93,7 @@ def sign_up():
 	form_data = request.form
 	email = form_data['email']
 
-	mandrill_client.messages.send(message={'subject':'Your Electy results', 'from_email':'results@electy.com', 'to':[{'email':email}], 'html':"<p>Hi there,</p><p>Thanks for using Electy to help you vote.</p><p>You can keep up-to-date with political conversation about the issue you selected - {0} - <a href=\"https://mysterious-journey-9885.herokuapp.com/{0}\">here</a>.</p><p>Happy voting,</p><p>The Electy Team</p>".format(issue_name[-1])})
+	mandrill_client.messages.send(message={'subject':'Your Electy results', 'from_email':'results@electy.com', 'to':[{'email':email}], 'html':"<p>Hi there,</p><p>Thanks for using Electy to help you vote.</p><p>You can keep up-to-date with political conversation about the issue you selected - {0} - <a href=\"www.electy.co.uk/{0}\">here</a>.</p><p>Happy voting,</p><p>The Electy Team</p>".format(issue_name[-1])})
 
 	return render_template('Electyupdate3.html')
 
