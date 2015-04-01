@@ -1,3 +1,7 @@
+input#email {
+	color: gray;
+}
+
 #submit-button {
 	color:gray;
 }
