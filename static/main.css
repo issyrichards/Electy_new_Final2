@@ -1,3 +1,11 @@
+#page_footer {
+	text-align: center;
+	background: rgba(66,139,202,0.5);
+	padding-top: 25px;
+	color: white;
+	font-size: 15px;
+}
+
 input#email {
 	color: gray;
 }
@@ -45,7 +53,7 @@ div#buttoncolumn {
         margin-right: auto;
         margin-left: auto;
         margin-top: 230px;
-        margin-bottom: 230px;
+        margin-bottom: 150px;
       }
 
 
