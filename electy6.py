@@ -106,7 +106,7 @@ def get_tweet_info(issue):
 	issue_name.append(issue)
 	print issue_name
 
-	return render_template('issue.html', issue=issue, labour_proportion=labour_proportion, conservative_proportion=conservative_proportion, libdem_proportion=libdem_proportion, UKIP_proportion=UKIP_proportion)
+	return render_template('issue2.html', issue=issue, labour_proportion=labour_proportion, conservative_proportion=conservative_proportion, libdem_proportion=libdem_proportion, UKIP_proportion=UKIP_proportion)
 
 @app.route("/sign_up", methods=['POST'])
 def sign_up():
