@@ -1,1 +1,1 @@
-web: gunicorn -b 0.0.0.0:$PORT electy5:app --log-file -
+web: gunicorn -b 0.0.0.0:$PORT electy6:app --log-file -

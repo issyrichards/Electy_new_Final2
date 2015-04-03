@@ -54,24 +54,41 @@ def get_total_tweets(issue):
 		return 1
 
 def get_labour_proportion(issue):
-	labour_proportion = float(get_labour_tweets(issue))/float(get_total_tweets(issue))*100
-	print 'Labour proportion:',labour_proportion
-	return "{0:.2f}".format(labour_proportion)
+	if mc.get('labour_proportion_{0}'.format(issue)) == None:
+		labour_proportion = float(get_labour_tweets(issue))/float(get_total_tweets(issue))*100
+		print 'Labour proportion:',labour_proportion
+		mc.set('labour_proportion_{0}'.format(issue), '{0}'.format(labour_proportion), time=900)
+		return "{0:.2f}".format(labour_proportion)
+	else:
+		return mc.get('labour_proportion_{0}'.format(issue))
 
 def get_conservative_proportion(issue):
-	conservative_proportion = float(get_conservative_tweets(issue))/float(get_total_tweets(issue))*100
-	print 'Conservative proportion:', conservative_proportion
-	return "{0:.2f}".format(conservative_proportion)
+	if mc.get('conservative_proportion_{0}'.format(issue)) == None:
+		conservative_proportion = float(get_conservative_tweets(issue))/float(get_total_tweets(issue))*100
+		print 'Conservative proportion:', conservative_proportion
+		mc.set('conservative_proportion_{0}'.format(issue), '{0}'.format(conservative_proportion), time=900)
+		return "{0:.2f}".format(conservative_proportion)
+	else:
+		return mc.get('conservative_proportion_{0}'.format(issue))
 
 def get_libdem_proportion(issue):
-	libdem_proportion = float(get_libdem_tweets(issue))/float(get_total_tweets(issue))*100
-	print 'Lib Dem proportion:', libdem_proportion
-	return "{0:.2f}".format(libdem_proportion)
+	if mc.get('libdem_proportion_{0}'.format(issue)) == None:
+		libdem_proportion = float(get_libdem_tweets(issue))/float(get_total_tweets(issue))*100
+		print 'Lib Dem proportion:', libdem_proportion
+		mc.set('libdem_proportion_{0}'.format(issue), '{0}'.format(libdem_proportion), time=900)
+		return "{0:.2f}".format(libdem_proportion)
+	else:
+		return mc.get('libdem_proportion_{0}'.format(issue))
 
 def get_UKIP_proportion(issue):
-	UKIP_proportion = float(get_UKIP_tweets(issue))/float(get_total_tweets(issue))*100
-	print 'UKIP proportion:', UKIP_proportion
-	return "{0:.2f}".format(UKIP_proportion)
+	if mc.get('UKIP_proportion_{0}'.format(issue)) == None:
+		UKIP_proportion = float(get_UKIP_tweets(issue))/float(get_total_tweets(issue))*100
+		print 'UKIP proportion:', UKIP_proportion
+		mc.set('UKIP_proportion_{0}'.format(issue), '{0}'.format(UKIP_proportion), time=900)
+		return "{0:.2f}".format(UKIP_proportion)
+	else:
+		return mc.get('UKIP_proportion_{0}'.format(issue))
+
 
 issue_name = []
 
