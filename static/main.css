@@ -10,9 +10,13 @@ body {
 #page_footer {
 	text-align: right;
 	background: rgba(0,0,0,0.1);
-	padding-top: 2px;
+	padding-top: 4px;
 	color: gray;
-	font-size: 10px;
+	font-size: 15px;
+}
+
+#page_footer p {
+	margin-left: 5px;
 }
 
 input#email {
