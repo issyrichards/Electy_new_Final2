@@ -1,9 +1,9 @@
 #page_footer {
 	text-align: center;
 	background: rgba(66,139,202,0.5);
-	padding-top: 25px;
+	padding-top: 0px;
 	color: white;
-	font-size: 15px;
+	font-size: 10px;
 }
 
 input#email {
