@@ -1,8 +1,12 @@
+body {
+	margin: 0;
+}
+
 #page_footer {
-	text-align: center;
-	background: rgba(66,139,202,0.5);
+	text-align: right;
+	background: rgba(0,0,0,0.5);
 	padding-top: 0px;
-	color: white;
+	color: black;
 	font-size: 10px;
 }
 
