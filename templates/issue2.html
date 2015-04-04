@@ -17,7 +17,7 @@
 	<nav id="wholebar2" class= "nav navbar navbar-default navbar-fixed-top navbar-absolute">
 		<div class="container">
 
-				<a href="/" class="navbar-header"><img id="logo2" class="img-responsive" src="{{ url_for('static', filename='Logo_electy_results.png') }}"/></a>
+				<a href="/" class="navbar-header"><img id="logo2" class="img img-responsive" src="{{ url_for('static', filename='Logo_electy_results.png') }}"/></a>
 			<div class="collapse navbar-collapse navHeaderCollapse">
 				<ul class="nav navbar-nav navbar-right">
 			</div>
@@ -41,7 +41,7 @@
 <div class="row">
     <div class="col-xs-12">
       <h1 id="charttitle">Proportion of political conversation in the last week about <em>{{ issue }}</em> by party</h1>
-      <img src="https://chart.googleapis.com/chart?cht=p&amp;chd=t:{{ labour_proportion }},{{ conservative_proportion }},{{ libdem_proportion }},{{ UKIP_proportion }}&amp;chl={{ labour_proportion }}%|{{ conservative_proportion }}%|{{ libdem_proportion }}%|{{ UKIP_proportion }}%&amp;chdls=000000,20&amp;chs=900x300&amp;chdl=Labour|Conservative|Lib Dem|UKIP&amp;chco=d50000,0087dc,FDBB30,70147A" id="pie">
+      <img class="img img-responsive" src="https://chart.googleapis.com/chart?cht=p&amp;chd=t:{{ labour_proportion }},{{ conservative_proportion }},{{ libdem_proportion }},{{ UKIP_proportion }}&amp;chl={{ labour_proportion }}%|{{ conservative_proportion }}%|{{ libdem_proportion }}%|{{ UKIP_proportion }}%&amp;chdls=000000,20&amp;chs=900x300&amp;chdl=Labour|Conservative|Lib Dem|UKIP&amp;chco=d50000,0087dc,FDBB30,70147A" id="pie">
     </div>
 </div>
 <div class="row">

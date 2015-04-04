@@ -22,7 +22,6 @@ body {
 
 #page_footer p {
 	margin-right: 30px;
-	margin-top: 5px;
 }
 
 input#email {
@@ -301,6 +300,19 @@ iframe {
 	#skillsdropdown {
 		display:initial;
 	}
+
+	#page_header {
+		margin-top: 63px;
+		text-align: left;
+		margin-left: 30px;
+	}
+
+	h1#charttitle {
+		margin-top: 300px;
+		margin-right: 40px;
+		margin-left: 40px;
+	}
+
 }
 
 #page_header {
