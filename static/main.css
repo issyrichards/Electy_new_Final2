@@ -15,9 +15,9 @@ body {
 #page_footer {
 	text-align: right;
 	background: rgba(0,0,0,0.1);
-	padding-top: 4px;
+	padding-top: 3px;
 	color: gray;
-	font-size: 15px;
+	font-size: 12px;
 }
 
 #page_footer p {
@@ -73,7 +73,7 @@ div#buttoncolumn {
         margin-right: auto;
         margin-left: auto;
         margin-top: 230px;
-        margin-bottom: 110px;
+        margin-bottom: 90px;
       }
 
 
