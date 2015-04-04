@@ -1,3 +1,8 @@
+.party {
+	text-align: center;
+	text-decoration: bold;
+}
+
 footer {
 	overflow: hidden;
 }
@@ -16,7 +21,8 @@ body {
 }
 
 #page_footer p {
-	margin-left: 5px;
+	margin-right: 30px;
+	margin-top: 5px;
 }
 
 input#email {
@@ -30,6 +36,7 @@ input#email {
 
 div#streamingsection.container {
 	margin-top: 120px;
+	margin-bottom: -120px;
 }
 
 div#loading {

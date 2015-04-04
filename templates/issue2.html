@@ -11,32 +11,31 @@
         <link rel="shortcut icon" type="image/png" href="http://i.imgur.com/txhtRuV.png" title="source: imgur.com" /></a>
 
     <title>Electy</title>
-	</head>
+</head>
 	
-	<body>
-		<nav id="wholebar2" class= "nav navbar navbar-default navbar-fixed-top navbar-absolute">
-			<div class="container">
+<body>
+	<nav id="wholebar2" class= "nav navbar navbar-default navbar-fixed-top navbar-absolute">
+		<div class="container">
 
 				<a href="/" class="navbar-header"><img id="logo2" class="img-responsive" src="{{ url_for('static', filename='Logo_electy_results.png') }}"/></a>
-				<div class="collapse navbar-collapse navHeaderCollapse">
+			<div class="collapse navbar-collapse navHeaderCollapse">
 				<ul class="nav navbar-nav navbar-right">
-				</div>
 			</div>
 
 		<!-- !Header-->
       <div id="page_header" class="nav navbar-nav navbar-right">
-        <div id="contact-form">
+      <div id="contact-form">
             <form action="/sign_up" method="post">
               <label for="email">Let us mail you your results! Sign up here: </label> 
               <input type="email" id="email" value="" name="email" required="required" placeholder="Email Address"/>
              <input type="submit" value="Submit" id="submit-button"/>
             </form>
-        </div>
+      </div>
       </div><!-- /header -->   
       <div class="nav navbar-nav navbar-right">
-        </div>
       </div>
-    </nav>
+    </div>
+  </nav>
 
 
 <div class="row">
@@ -56,107 +55,107 @@
   <div class="row">
       {% if issue == "NHS" %}
       <div class="col-xs-12 col-md-3">
-        <p>Labour</p>
+        <p class="party">Labour</p>
         <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/search?q=NHS%20from%3AUKLabour" data-widget-id="578979837307654145">Tweets about NHS from:UKLabour</a>
       </div>
       <div class="col-xs-12 col-md-3">
-        <p>Conservatives</p>
+        <p class="party">Conservatives</p>
         <a class="twitter-timeline" href="https://twitter.com/search?q=from%3AConservatives%20NHS" data-widget-id="580828586980020225">Tweets about from:Conservatives NHS</a>
       </div>
       <div class="col-xs-12 col-md-3">
-        <p>Lib Dems</p>
+        <p class="party">Lib Dems</p>
         <a class="twitter-timeline"  href="https://twitter.com/search?q=from%3ALibDems%20NHS" data-widget-id="582464118046720000">Tweets about from:LibDems NHS</a>
       </div>
       <div class="col-xs-12 col-md-3">
-        <p>UKIP</p>
+        <p class="party">UKIP</p>
         <a class="twitter-timeline" href="https://twitter.com/search?q=from%3AUKIP%20NHS" data-widget-id="580828880963035136">Tweets about from:UKIP NHS</a>
       </div>
       {% elif issue == "Tax" %}
       <div class="col-xs-12 col-md-3">
-        <p>Labour</p>
+        <p class="party">Labour</p>
         <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/search?q=from%3AUKLabour%20Tax" data-widget-id="580829860156870656">Tweets about from:UKLabour Tax</a>
       </div>
         <div class="col-xs-12 col-md-3">
-          <p>Conservatives</p>
+          <p class="party">Conservatives</p>
         <a class="twitter-timeline" href="https://twitter.com/search?q=From%3AConservatives%20Tax" data-widget-id="580828160352235520">Tweets about From:Conservatives Tax</a>
       </div>
       <div class="col-xs-12 col-md-3">
-        <p>Lib Dems</p>
+        <p class="party">Lib Dems</p>
         <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/search?q=from%3ALibDems%20Tax" data-widget-id="580828943323922433">Tweets about from:LibDems Tax</a>
       </div>
         <div class="col-xs-12 col-md-3">
-          <p>UKIP</p>
+          <p class="party">UKIP</p>
         <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/search?q=from%3AUKIP%20Tax" data-widget-id="580829241123708928">Tweets about from:UKIP Tax</a>
       </div>
       {% elif issue == "Education" %}
       <div class="col-xs-12 col-md-3">
-        <p>Labour</p>
+        <p class="party">Labour</p>
         <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/search?q=from%3AUKLabour%20Education" data-widget-id="580831136357679104">Tweets about from:UKLabour Education</a>
       </div>
         <div class="col-xs-12 col-md-3">
-        <p>Conservatives</p>
+        <p class="party">Conservatives</p>
         <a class="twitter-timeline" href="https://twitter.com/search?q=from%3AConservatives%20Education" data-widget-id="580832325405155328">Tweets about from:Conservatives Education</a>
       </div>
       <div class="col-xs-12 col-md-3">
-        <p>Lib Dems</p>
+        <p class="party">Lib Dems</p>
         <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/search?q=from%3ALibDems%20Education" data-widget-id="580830646408445952">Tweets about from:LibDems Education</a>
       </div>
         <div class="col-xs-12 col-md-3">
-          <p>UKIP</p>
+          <p class="party">UKIP</p>
         <a class="twitter-timeline" href="https://twitter.com/search?q=from%3AUKIP%20Education" data-widget-id="580831740459114496">Tweets about from:UKIP Education</a>
       </div>
 
       {% elif issue == "Europe" %}
       <div class="col-xs-12 col-md-3">
-        <p>Labour</p>
+        <p class="party">Labour</p>
         <a class="twitter-timeline" href="https://twitter.com/search?q=%27Europe%27%20from%3AUKLabour" data-widget-id="584018320137007104">Tweets about 'Europe' from:UKLabour</a>
       </div>
       <div class="col-xs-12 col-md-3">
-        <p>Conservatives</p>
+        <p class="party">Conservatives</p>
         <a class="twitter-timeline" href="https://twitter.com/search?q=%27Europe%27%20from%3AConservatives" data-widget-id="584019458227888128">Tweets about 'Europe' from:Conservatives</a>
       </div>
       <div class="col-xs-12 col-md-3">
-        <p>Lib Dems</p>
+        <p class="party">Lib Dems</p>
         <a class="twitter-timeline" href="https://twitter.com/search?q=%27Europe%27%20from%3ALibDems" data-widget-id="584020028569346048">Tweets about 'Europe' from:LibDems</a>
       </div>
       <div class="col-xs-12 col-md-3">
-        <p>UKIP</p>
+        <p class="party">UKIP</p>
         <a class="twitter-timeline" href="https://twitter.com/search?q=%27Europe%27%20from%3AUKIP" data-widget-id="584020266227015682">Tweets about 'Europe' from:UKIP</a>
       </div>
 
       {% elif issue == "Immigration" %}
       <div class="col-xs-12 col-md-3">
-        <p>Labour</p>
+        <p class="party">Labour</p>
         <a class="twitter-timeline" href="https://twitter.com/search?q=%27Immigration%27%20from%3AUKLabour" data-widget-id="584021530205622272">Tweets about 'Immigration' from:UKLabour</a>
       </div>
       <div class="col-xs-12 col-md-3">
-        <p>Conservatives</p>
+        <p class="party">Conservatives</p>
         <a class="twitter-timeline" href="https://twitter.com/search?q=%27Immigration%27%20from%3AConservatives" data-widget-id="584021754642857984">Tweets about 'Immigration' from:Conservatives</a>
       </div>
       <div class="col-xs-12 col-md-3">
-        <p>Lib Dems</p>
+        <p class="party">Lib Dems</p>
         <a class="twitter-timeline" href="https://twitter.com/search?q=%27Immigration%27%20from%3ALibDems" data-widget-id="584022035132784640">Tweets about 'Immigration' from:LibDems</a>
       </div>
       <div class="col-xs-12 col-md-3">
-        <p>UKIP</p>
+        <p class="party">UKIP</p>
         <a class="twitter-timeline" href="https://twitter.com/search?q=%27Immigration%27%20from%3AUKIP" data-widget-id="584022251651076096">Tweets about 'Immigration' from:UKIP</a>
       </div>
 
       {% elif issue == "Welfare" %}
       <div class="col-xs-12 col-md-3">
-        <p>Labour</p>
+        <p class="party">Labour</p>
         <a class="twitter-timeline" href="https://twitter.com/search?q=welfare%20from%3AUKLabour" data-widget-id="584022605633585153">Tweets about welfare from:UKLabour</a>
       </div>
       <div class="col-xs-12 col-md-3">
-        <p>Conservatives</p>
+        <p class="party">Conservatives</p>
         <a class="twitter-timeline" href="https://twitter.com/search?q=welfare%20from%3AConservatives" data-widget-id="584023492137451521">Tweets about welfare from:Conservatives</a>
       </div>
       <div class="col-xs-12 col-md-3">
-        <p>Lib Dems</p>
+        <p class="party">Lib Dems</p>
         <a class="twitter-timeline" href="https://twitter.com/search?q=welfare%20from%3ALibDems" data-widget-id="584023715593191424">Tweets about welfare from:LibDems</a>
       </div>
       <div class="col-xs-12 col-md-3">
-        <p>UKIP</p>
+        <p class="party">UKIP</p>
         <a class="twitter-timeline" href="https://twitter.com/search?q=welfare%20from%3AUKIP" data-widget-id="584023896149663744">Tweets about welfare from:UKIP</a>
       </div>
       {% endif %}
@@ -167,7 +166,7 @@
       <div id="register" class="group">
         <p>Powered by Issy Richards, Becky Marshall, Roz Thomasoo and the Twitter API</p>
       </div>
-      </footer>
+  </footer>
 
 <script>
  $("#streamingsection").hide();
