@@ -294,12 +294,12 @@ div#page_header.nav.navbar-nav.navbar-right {
 }
 
 
-@media (max-width: 1020px) {
+/*@media (max-width: 1020px) {
 	#pitch {
 		padding-top: 90px;
-	}
-}	
-@media (max-width:992px) {
+	}*/
+
+@media (max-width:1080px) {
 	img.img-responsive {
 		margin-left: auto;
 		margin-right: auto;
