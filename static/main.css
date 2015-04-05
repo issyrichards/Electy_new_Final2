@@ -320,6 +320,13 @@ div#page_header.nav.navbar-nav.navbar-right {
 	.jumbotron p {
 		font-size: 15px;
 		}
+
+	div#pitch.col-xs-12.col-lg-7 {
+		color: black;
+}
+.overlay {
+		position: static;
+	}
 }
 
 
@@ -350,12 +357,4 @@ div#page_header.nav.navbar-nav.navbar-right {
 
 }
 
-@media (max-width: 692px) {
-	div#pitch.col-xs-12.col-sm-7 {
-		color: black;
-}
-.overlay {
-		position: static;
-	}
-}
 
