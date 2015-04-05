@@ -124,8 +124,8 @@ div.jumbotron {
 	.container video {
 		display: none;
 	}
-	div.overlay {
-		position: relative;
+	.overlay {
+		position: static;
 	}
 }
 
