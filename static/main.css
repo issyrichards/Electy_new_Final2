@@ -126,7 +126,6 @@ div.jumbotron {
 	}
 	.overlay {
 		position: relative;
-		z-index: 0;
 	}
 }
 
@@ -155,6 +154,10 @@ video
 
 .overlay {
 	color: white;
+}
+
+#issuesection ul {
+	padding-left: 0px;
 }
 
 h1 #issueheader{
