@@ -121,8 +121,8 @@ div.jumbotron {
 }
 
 @media (max-width: 893px) {
-	.overlay {
-		z-index: 0;
+	video {
+		display: none;
 	}
 }
 
