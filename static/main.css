@@ -121,11 +121,18 @@ div.jumbotron {
 }
 
 @media (max-width: 893px) {
-	video {
+	.container video {
 		display: none;
 	}
 	.overlay {
 		position: relative;
+		z-index: 0;
+	}
+}
+
+@media (max-width: 1020px) {
+	#pitch {
+		padding-top: 90px;
 	}
 }
 
