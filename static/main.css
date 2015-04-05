@@ -299,7 +299,7 @@ div#page_header.nav.navbar-nav.navbar-right {
 		padding-top: 90px;
 	}*/
 
-@media (max-width:1080px) {
+@media (max-width: 1080px) {
 	img.img-responsive {
 		margin-left: auto;
 		margin-right: auto;
@@ -324,7 +324,7 @@ div#page_header.nav.navbar-nav.navbar-right {
 	div#pitch.col-xs-12.col-lg-7 {
 		color: black;
 }
-.overlay {
+	.overlay {
 		position: static;
 	}
 }
