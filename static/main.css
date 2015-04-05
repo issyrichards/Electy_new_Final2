@@ -314,9 +314,11 @@ div#page_header.nav.navbar-nav.navbar-right {
 
 	#pitch {
 		padding-top:50px;
+		font-size: 70%;
 	}
 	#pitch h1 {
 		padding-top: 0px;
+		font-size: 70%;
 	}
 
 	.jumbotron p {
