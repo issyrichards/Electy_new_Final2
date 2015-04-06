@@ -71,7 +71,7 @@ div#buttoncolumn {
         display: block;
         margin-right: auto;
         margin-left: auto;
-        margin-top: 150px;
+        margin-top: 180px;
         margin-bottom: 90px;
       }
 
@@ -312,17 +312,21 @@ div#page_header.nav.navbar-nav.navbar-right {
 		margin-top: 50px;
 	}
 
+	.jumbotron h1 {
+		font-size: 50px;
+		padding-top: 25px;
+	}
+
 	#pitch {
 		padding-top:50px;
-		font-size: 70%;
 	}
+
 	#pitch h1 {
 		padding-top: 0px;
-		font-size: 70%;
 	}
 
 	.jumbotron p {
-		font-size: 15px;
+		font-size: 12px;
 		}
 
 	div#pitch.col-xs-12.col-md-7 {
@@ -330,6 +334,18 @@ div#page_header.nav.navbar-nav.navbar-right {
 }	
 	.overlay {
 		position: static;
+	}
+
+	video.video {
+		display: none;
+	}
+
+	div.jumbotron {
+		background-color: rgba(66,139,202,1);
+	}
+
+	div#issueheader.col-xs-12 {
+		padding-top: 64px;
 	}
 }
 
