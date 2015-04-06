@@ -333,9 +333,11 @@ div#page_header.nav.navbar-nav.navbar-right {
 
 	div#pitch.col-xs-12.col-md-7 {
 		background-color: rgba(66,139,202,0.5);
+		color: black;
 }	
 	.overlay {
 		position: static;
+		margin-top: 60px;
 	}
 
 	video.video {
@@ -348,6 +350,10 @@ div#page_header.nav.navbar-nav.navbar-right {
 
 	div#issueheader.col-xs-12 {
 		padding-top: 64px;
+	}
+
+	footer#page_footer {
+		display: none;
 	}
 }
 
