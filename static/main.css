@@ -369,7 +369,8 @@ div#page_header.nav.navbar-nav.navbar-right {
 	}
 
 	#logo {
-		margin: -7px 0 -32px 0;
+		margin: -7px 0 -15px 0;
+		max-width: 200px
 	}
 
 	div#streamingsection.container {
